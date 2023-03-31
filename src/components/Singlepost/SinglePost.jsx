@@ -10,12 +10,14 @@ import { useEffect, useState } from "react";
 
 export default function SinglePost(props) {
 
-    const [time, settime] = useState(0);
-    console.log(time);
+    // const [time, settime] = useState(0);
+    // console.log(time);
     
+    // function handleTimetoread() {
+    //     settime((prevTime) => prevTime + props.postdata.time_to_read);
+    //   }
 
 
-   
     return (
         <>
             <div className=" col mt-3">
@@ -51,7 +53,8 @@ export default function SinglePost(props) {
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <a href="#markasread" onClick={(()=>{settime(time+props.postdata.time_to_read)})}>Mark as Read</a>
+                        <Button  onClick={()=>props.onButtonClick(props.postdata.time_to_read)}>Mark as Read</Button>
+                        
                     </Card.Body>
                 </Card>
             </div>
