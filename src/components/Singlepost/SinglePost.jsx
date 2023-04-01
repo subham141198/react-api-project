@@ -2,7 +2,7 @@ import "./SinglePost.css"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Image } from 'react-bootstrap';
-import { useEffect, useState } from "react";
+
 
 
 
@@ -45,7 +45,7 @@ export default function SinglePost(props) {
                                 
                             </div>
                             <div className="col-6 d-flex justify-content-end">
-                                    <p>{props.postdata.time_to_read} min read</p><i className="fa-sharp fa-solid fa-bookmark"></i>
+                                    <p>{props.postdata.time_to_read} min read</p><i className="fa-sharp fa-solid fa-bookmark" onClick={()=>props.onAddBookmark(props.postdata)}></i>
                             </div>
                         </div>
                         <Card.Title>{props.postdata.post_title}</Card.Title>
