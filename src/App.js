@@ -1,6 +1,6 @@
 
 import './App.css';
-import Header from './components/header/Header';
+import Header from './components/Header/Header';
 import Post from './components/Post/Post'
 //import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 function App() {
