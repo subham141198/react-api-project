@@ -7,13 +7,13 @@ import "./header.css"
 export class Header extends Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar>
         <Container>
-          <Navbar.Brand href="#home">Knowledge Cafe</Navbar.Brand>
+          <Navbar.Brand className='nav-heading' href="#home">Knowledge Cafe</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <a href="#login"><Image className="img-fluid imgSize"  src="https://media.geeksforgeeks.org/wp-content/uploads/20210425000233/test-300x297.png" roundedCircle/></a>
+              <a href="#login"><Image className="img-fluid imgSize"  src="https://images.pexels.com/photos/3646160/pexels-photo-3646160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" roundedCircle/></a>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

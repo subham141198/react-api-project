@@ -21,22 +21,22 @@ export default function SinglePost(props) {
     return (
         <>
             <div className=" col mt-3">
-                <Card>
-                    <Card.Img variant="top" src={props.postdata.post_picture} />
+                <Card className="border-0">
+                    <Card.Img variant="top" src={props.postdata.post_picture} className="rounded" />
                     <Card.Body>
                         <div className="row">
-                            <div className="col-6 d-flex justify-content-start align-items-center">
+                            <div className="col-8">
                                 <div className="row align-items-center">
-                                    <div className="col-3 justify-content-start">
-                                    <Image src={props.postdata.profile_picture} alt="Description" width="50" height="50" roundedCircle />
+                                    <div className="col-6">
+                                    <Image src={props.postdata.profile_picture} alt="Description" width="60" height="60" roundedCircle />
                                     </div>
-                                    <div className="col-9">
+                                    <div className="col-6">
                                     <div className="row flex-column">
                                         <div className="col justify-content-start">
-                                            <h5>{props.postdata.profile_name}</h5>
+                                            <h5 className="profile-name">{props.postdata.profile_name}</h5>
                                         </div>
                                         <div className="col justify-content-start">
-                                            <p>Mar, 15</p>
+                                            <p className="date">Mar, 15</p>
                                         </div>
                                     </div>
                                     </div>
@@ -44,7 +44,7 @@ export default function SinglePost(props) {
                                 
                                 
                             </div>
-                            <div className="col-6 d-flex justify-content-end">
+                            <div className="col-4 d-flex justify-content-end">
                                     <p>{props.postdata.time_to_read} min read</p><i className="fa-sharp fa-solid fa-bookmark" onClick={()=>props.onAddBookmark(props.postdata)}></i>
                             </div>
                         </div>

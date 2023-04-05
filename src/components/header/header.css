@@ -1,4 +1,11 @@
 .imgSize{
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
+}
+.nav-heading{
+   
+font-size: 40px;
+font-weight: 700;
+line-height: 64px;
+
 }
